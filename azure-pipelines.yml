@@ -19,11 +19,10 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
-  
 - script: |
     echo Starting the build
     stages:
-- stage:build
+-  stage:build
     mvn clean install
-  displayName: 'Build with Maven'
+  displayName:  'Build with Maven'
 
