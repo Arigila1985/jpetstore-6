@@ -23,4 +23,4 @@ steps:
     mvn clean install
   displayName: 'Build with Maven'
   # Enviromnet details
-  environment: "Dev"
+  environment: 'Development'
