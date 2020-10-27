@@ -22,5 +22,5 @@ steps:
     echo Starting the build
     mvn clean install
   displayName: 'Build with Maven'
-  # Enviromnet details
-  environment: 'Development'
+  # EnviromnetName details
+  environmentName: 'Development'
