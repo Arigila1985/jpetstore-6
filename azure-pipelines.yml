@@ -22,13 +22,7 @@ steps:
 - script: |
     echo Starting the build
     stages:
--  stage:build
-    mvn clean install
-   - task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
+-  stage :build
+    mvn install
+   
 
