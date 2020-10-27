@@ -22,7 +22,7 @@ steps:
 - script: |
     echo Starting the build
     stages:
--  stage :build
+-  stage:build
     mvn install
    
 
