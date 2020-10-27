@@ -23,8 +23,7 @@ steps:
 - script: |
     echo Starting the build
     stages:
-  -stage: build
+- stage:build
     mvn clean install
   displayName: 'Build with Maven'
-  # EnviromnetName details
-  
+
