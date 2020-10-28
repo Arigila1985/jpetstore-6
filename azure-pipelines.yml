@@ -30,6 +30,6 @@ stages:
     displayName: Build and Push Container Images
     pool:
       vmImage: $(vmImageName)
-displayName: Build 
+- displayName: Build 
 
 
