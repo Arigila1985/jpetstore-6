@@ -21,7 +21,7 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
 - script: |
     echo Starting the build
-  steps:
+     steps:
 - script: |
     echo Starting the build
     mvn package
