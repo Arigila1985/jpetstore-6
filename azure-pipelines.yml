@@ -22,7 +22,15 @@ steps:
 - script: |
     echo Starting the build
     stages:
--  stage:build
-    mvn install
-   
+stages:
+- stage: Build 
+  displayName: Build stage
+  jobs:  
+  - job: Build 
+    displayName: Build and Push Container Images
+    pool:
+      vmImage: $(vmImageName)
+  displayName: Build 
+
+
 
